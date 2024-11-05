@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "voyage-ai-mvp"
+version = "0.1.0"
+description = "Memories AI MVP Test"
+authors = ["Atuhaire Collins Benda <collinsbenda360@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gradio = "^5.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
