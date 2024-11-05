@@ -1,16 +1,40 @@
 [tool.poetry]
 name = "voyage-ai-mvp"
 version = "0.1.0"
-description = "Memories AI MVP Test"
+description = "AI-powered memorial video generator with voice cloning capabilities"
 authors = ["Atuhaire Collins Benda <collinsbenda360@gmail.com>"]
-license = "MIT"
 readme = "README.md"
+packages = [{include = "voyage_ai_mvp", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 gradio = "^5.5.0"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+ruff = "^0.7.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "B"]
+ignore = ["E501"]
