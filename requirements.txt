@@ -1,0 +1,14 @@
+torch
+torchvision
+torchaudio
+gradio>=4.0.0
+TTS>=0.17.0
+opencv-python-headless
+numpy
+Pillow
+moviepy
+openai-whisper
+insightface
+librosa
+scipy
+soundfile
