@@ -1,3 +1,14 @@
+---
+title: Memorial Video Generator
+emoji: 🎥
+colorFrom: indigo
+colorTo: purple
+sdk: gradio
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+
 # Memories AI
 
 ```bash
@@ -10,9 +21,8 @@ voyage-ai-mvp/
 
 ```
 
-
 ```bash
-conda create -n voyage-ai python=3.8
+conda create -n voyage-ai
 conda activate voyage-ai
 ```
 
@@ -23,5 +33,3 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
-
